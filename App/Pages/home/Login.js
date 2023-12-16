@@ -28,13 +28,14 @@ export default function Login() {
         }}>
           <Text style={styles.textoBotao}>Entrar</Text>
         </TouchableOpacity>
+      
+        <View style={styles.goole}>
+          <Text>Google</Text>
+        </View>
       </View>
     </View>
   );
 }
-
-// Restante do seu código...
-
 
 
 const styles = StyleSheet.create({
@@ -64,12 +65,12 @@ const styles = StyleSheet.create({
     alignSelf: 'center'
   },
   form: {
-    width: '80%',
+    width: '100%'
   },
   input: {
     height: 50,
     borderColor: 'gray',
-    borderWidth: 1,
+    borderWidth: 2,
     marginBottom: 20,
     padding: 13,
     borderRadius: 5
@@ -78,6 +79,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#00B25A',
     padding: 10,
     alignItems: 'center',
+    marginBottom: 20,
     borderRadius: 5,
     borderColor: '#00B25A',
     height: 50,
@@ -87,4 +89,20 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
   },
+  goole: {
+    backgroundColor: '#00B25A',
+    padding: 10,
+    alignItems: 'center',
+    borderRadius: 20,
+    borderColor: '##208FBC',
+    marginBottom: 20,
+    height: 40, // Altura reduzida
+    alignSelf: 'center', // Centralizado horizontalmente
+    justifyContent: 'flex-end', // Alinhado na parte inferior
+    marginTop: 'auto', // Move para a parte inferior
+    marginBottom: 20, // Espaçamento inferior adicional
+    fontWeight: 'bold'
+  }
+  
+
 });
